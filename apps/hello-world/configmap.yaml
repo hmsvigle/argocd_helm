@@ -1,0 +1,4 @@
+key01: "value-01"
+key02: "value-02"
+global_key01: {{ .Values.configmap.global_key01 }}
+global_key02: {{ .Values.configmap.global_key02 }}
