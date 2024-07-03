@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.appName }}-configmap
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: {{ .Values.appName }}
+data:
+{{ tpl (printf "%s/configmap.yaml" .Values.appNameGeneric | .Files.Get | indent 2) . }}

@@ -1,0 +1,3 @@
+configmap:
+  global_key01: "global_value01"
+  global_key02: "global_value02"
