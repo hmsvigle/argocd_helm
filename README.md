@@ -91,7 +91,6 @@ spec:
         app.kubernetes.io/name: hello-world
         app.kubernetes.io/instance: hello-world
     spec:
-      serviceAccountName: hello-world
       containers:
         - name: hello-world
           image: "nginx:1.16.0"
