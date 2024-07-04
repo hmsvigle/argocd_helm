@@ -6,4 +6,4 @@ metadata:
   labels:
     app: {{ .Values.appName }}
 data:
-{{ tpl (printf "%s/configmap.yaml" .Values.appNameGeneric | .Files.Get | indent 2) . }}
+{{ tpl (printf "apps/%s/configmap.yaml" .Values.appNameGeneric | .Files.Get | indent 2) . }}
