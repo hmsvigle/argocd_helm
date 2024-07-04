@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-appName: hello-world
+appName: app
 image:
   repository: nginx
   pullPolicy: IfNotPresent
