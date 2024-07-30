@@ -3,3 +3,4 @@ configmap:
   global_key02: "global_value02"
   env: "reg"
 
+replicaCount: 2
